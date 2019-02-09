@@ -2,7 +2,9 @@
   "name": "todoapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://justkylekitasol.github.io/todo-list",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
@@ -11,12 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    "> 0.5%", "last 2 versions", "Firefox ESR", "not ie <= 10", "not ie_mob <= 10", "not bb <= 10", "not op_mob <= 12.1"
   ]
 }
